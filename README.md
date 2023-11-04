@@ -12,9 +12,9 @@ facts_list = ["Elon Musk, sosyal ağların içeriği görüntülemek için mümk
 
 @app.route("/")
 def hello_world():
-    return f'<a href="/rastgele_gercek">Rastgele bir gerçeği görüntüle!</a>'
+    return f'<a href="/rasgele">Rastgele bir gerçeği görüntüle!</a>'
 
-@app.route("/rastgele_gercek")
+@app.route("/rastgele")
 def rastgele():
     return f'<p>{random.choice(facts_list)}</p>'
 
